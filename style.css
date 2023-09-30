@@ -11,7 +11,7 @@ body {
     padding: 0;
     overflow: hidden;
 
-    background-image: linear-gradient(to right top, #140141, #0d043a, #0a0431, #070428, #04041f, #04041f, #04041f, #04041f, #070428, #0a0431, #0d043a, #140141);
+    background-image: linear-gradient(to right top, #151212, #151313, #151414, #151415, #151515);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
