@@ -1,0 +1,84 @@
+.next {
+    display: flex;
+    width: min-content;
+    height: 60px;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+  }
+
+.previous {
+    display: flex;
+    width: min-content;
+    height: 60px;
+    position: fixed;
+    bottom: 5%;
+    left: 10%;
+  }
+  
+  .button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    padding: .5em 1.5em;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(115, 211, 228);
+    transition: all .3s ease;
+  }
+  
+  .arrow {
+    fill: #94a1b2;
+    position: absolute;
+    pointer-events: none;
+    width: 24px;
+    right: 0;
+    top: 30%;
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  
+  .fleche {
+    fill: #94a1b2;
+    position: absolute;
+    pointer-events: none;
+    width: 24px;
+    left: 0;
+    top: 30%;
+    transition: all .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+
+  .button:hover {
+    letter-spacing: 2px;
+  }
+  
+  .button:hover ~.second {
+    opacity: .66;
+    right: -20px;
+    transition-delay: 50ms;
+  }
+  
+  .button:hover ~.third {
+    opacity: .33;
+    right: -40px;
+    transition-delay: 100ms;
+  }
+
+  .button:hover ~.deux {
+    opacity: .66;
+    left: -20px;
+    transition-delay: 50ms;
+  }
+  
+  .button:hover ~.trois {
+    opacity: .33;
+    left: -40px;
+    transition-delay: 100ms;
+  }
+  
+  .second, 
+  .third 
+  .deux
+  .trois {
+    opacity: 0;
+  }

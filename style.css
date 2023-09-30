@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    background-image: linear-gradient(to right top, #140141, #0d043a, #0a0431, #070428, #04041f, #04041f, #04041f, #04041f, #070428, #0a0431, #0d043a, #140141);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    cursor:none;
+}
+.navigation {
+    padding-left: 5%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+    background-color: transparent !important;
+}
+
+.navbar-brand{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50%;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #fa46dc;
+}
+
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    bottom: 0;
+}
+.container-horizontal {
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.section {
+    padding: 5%;
+    max-width: 100vw;
+    max-height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+/* Curseur */
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid rgb(115, 211, 228);
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 50px), -50%);
+    animation: glowingEffect 1s infinite;
+  }
+
+  @keyframes glowingEffect {
+    0% {
+      box-shadow: 0 0 5px 0px rgba(115, 211, 228, 0.5);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px rgba(115, 211, 228, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 5px 0px rgba(115, 211, 228, 0.5);
+    }
+  }
+  
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: rgb(115, 211, 228);
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  
+  .hover {
+    opacity: 0.5;
+  }
+  
+  .cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+  }
