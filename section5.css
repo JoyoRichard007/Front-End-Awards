@@ -82,3 +82,83 @@
   .trois {
     opacity: 0;
   }
+
+.section5 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 100vw;
+  overflow-y: auto;
+}
+
+.section5 p {
+  white-space: normal;
+}
+
+.contenu-section-5 {
+   display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.contenu-gauche, .contenu-droite {
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+}
+.contenu-gauche img{
+  width: 40%;
+  height: auto;
+}
+.contenu-droite {
+  display: flex;
+}
+.button_reconnaitre_section, .button_retrouver_section, .button_transcription_section{
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2em;
+  flex: 1 1 auto;
+}
+.button_reconnaitre_section a, .button_retrouver_section a, .button_transcription_section a{
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--button-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .5s;
+  margin-right: 70px;
+}
+.button_reconnaitre_section a:hover,.button_retrouver_section a:hover, .button_transcription_section a:hover{
+  background-color: var(--button-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 5px var(--button-color),
+  0 0 25px var(--button-color),
+  0 0 50px var(--button-color),
+  0 0 200px var(--button-color);
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+/*CAMERA CAMERA START*/
+.camera_container {
+  flex: auto;
+  text-align: right;
+}
+.camera_retrouver, .camera_reconnaitre {
+  width: 50%;
+  height: 70%;
+  padding-top: 20%;
+  padding-bottom: 5%;
+}
+.camera_retrouver {
+  display: none;
+}
+.camera_reconnaitre {
+  display: none;
+}

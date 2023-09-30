@@ -1,0 +1,23 @@
+.contenu-section6-droite{
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 50%;
+}
+
+.contenu-section6-droite h1 {
+    color: white;
+}
+
+.contenu-section6-droite .text-speech textarea {
+  width: 80%;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgba(245, 245, 245, 0.233);
+  border: 1px solid #d4d4d4; /* Ajoutez une bordure pour la distinction si nécessaire */
+  padding: 10px; /* Ajoutez un remplissage pour l'espacement interne */
+  resize: none;
+}
+.contenu-section6-droite .text-speech textarea:focus {
+    border: 2px solid #d4d4d4;
+}

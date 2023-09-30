@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="section3.css">
     <link rel="stylesheet" href="section4.css">
     <link rel="stylesheet" href="section5.css">
+    <link rel="stylesheet" href="section6.css">
     <link rel="stylesheet" href="accueil.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -67,10 +68,73 @@
             </div>
         </section>
 
+        <section class="section section5">
+            <!-- Contenu de la cinquième section -->
+            <div class="contenu-section-5">
+              <div class="contenu-gauche">
+                <img alt="robot" src="images/robot.png"/>
+              </div>
+              <div class="contenu-droite">
+                <div class="button_reconnaitre_section">
+                  <a href="#reconnaitre" id="toggleVideoReconnaitre">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Reconnaitre
+                  </a>
+                </div>
+                <div class="button_retrouver_section">
+                  <a href="#retrouver" id="toggleVideoRetrouver">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Retrouver
+                  </a>
+                </div>
+              </div>
+            </div>  
+            <div class="camera_container">
+              <div class="camera_retrouver" id="retrouver">
+                <video id="camera" autoplay></video>
+                <!--<button id="startRecording">Démarrer</button>
+                <button id="stopRecording" disabled>Arrêter</button>-->
+              </div>
+              <div class="camera_reconnaitre" id="reconnaitre">
+                <video id="camera" autoplay></video>
+                <!--<button id="startRecording">Démarrer</button>
+                <button id="stopRecording" disabled>Arrêter</button>-->
+              </div>
+            </div>
+        </section>
         <section class="section">
-            <!-- Contenu de la troisième section -->
-            <h1>Hello</h1> 
-            <div class="next">
+          <!-- Contenu de la sixième section section -->
+          
+            <div class="contenu-section-5">
+              <div class="contenu-gauche">
+                <img alt="robot" src="images/robot.png"/>
+              </div>
+              <div class="contenu-section6-droite">
+                <h1>Afficher la transcription</h1>
+                <form class="text-speech">
+                  <textarea id="text_to_speech" placeholder="Entrez le texte à transcrire"> </textarea>
+                </form>
+                <div id="bouton_trancription" class="button_transcription_section">
+                  <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Ecouter
+                  </a>
+                </div>
+              </div>
+            </div>  
+        </section>
+        <section class="section">
+            <!-- Contenu de la septième section -->
+              <div class="next">
                 <button class="button">Droite</button>
                 <span class="arrow first">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -87,9 +151,9 @@
                     <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
                   </svg>
                 </span>
-              </div>
+            </div>
 
-              <div class="previous">
+            <div class="previous">
                 <button class="button">Gauche</button>
                 <span class="fleche un">
                   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -107,21 +171,12 @@
                   </svg>
                 </span>
                 
-              </div>
-              
-        </section>
-        <section class="section">
-          <!-- Contenu de la sixième section section -->
-          
-          <img src="h2.jpg" alt="">
-        </section>
-        <section class="section">
-            <!-- Contenu de la septième section -->
-            
+            </div>
             <img src="h2.jpg" alt="">
         </section>
     </div>
 
     <script src="main.js"></script>
+    <script src="video.js"></script>
 </body>
 </html>

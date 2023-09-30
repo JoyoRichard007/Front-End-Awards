@@ -2,6 +2,7 @@
   --bg-color: #151515;
   --text-color: white;
   --vive-color: #fd3f92;
+  --button-color : #00b3ff;
   /*utilisation
   color: var(nom de la variable couleur);*/
 }
@@ -61,13 +62,14 @@ body {
     display: flex;
     position: relative;
     bottom: 0;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center; 
 }
 
 
 /* Curseur */
 .cursor {
+    z-index: 999;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -94,6 +96,7 @@ body {
   }
   
   .cursor2 {
+    z-index: 999;
     width: 20px;
     height: 20px;
     border-radius: 100%;
@@ -110,6 +113,7 @@ body {
   }
   
   .cursorinnerhover {
+    z-index: 999;
     width: 50px;
     height: 50px;
     opacity: .5;
