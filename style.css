@@ -1,3 +1,11 @@
+:root{
+  --bg-color: #151515;
+  --text-color: white;
+  --vive-color: #fd3f92;
+  /*utilisation
+  color: var(nom de la variable couleur);*/
+}
+
 body {
     margin: 0;
     padding: 0;
